@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "[handlebars]": {
+        "editor.formatOnSave": false
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "typescriptreact"
+    ],
+    "prettier.requireConfig": true
+}

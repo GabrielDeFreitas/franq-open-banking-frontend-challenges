@@ -11,7 +11,8 @@
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "generate": "pnpm dlx plop --plopfile generators/plopfile.cjs"
   },
   "jest": {
     "testEnvironment": "jest-environment-jsdom",
@@ -70,6 +71,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.5.0",
+    "plop": "^4.0.1",
     "prettier": "^3.5.3",
     "storybook": "^8.6.6",
     "typescript": "~5.7.3",
