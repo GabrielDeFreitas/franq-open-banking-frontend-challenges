@@ -1,9 +1,10 @@
-import { TitleDescription } from './components/title-description'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import RouterProvider from './routes'
+import './index.css'
 
-export default function App() {
-  return (
-    <>
-      <TitleDescription title="Page Title" description="Description page" />
-    </>
-  )
-}
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <RouterProvider />
+  </StrictMode>
+)
