@@ -4,5 +4,10 @@
         "title": "Error",
         "description": "Something went wrong. Please try again later.",
         "go_to_home": "Go to the home page"
+    },
+    "loading_screen": {
+        "aria_label": "Loading feedback screen",
+        "title": "Loading...",
+        "description": "Please wait while we process your information."
     }
 }

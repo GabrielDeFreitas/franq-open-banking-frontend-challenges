@@ -4,5 +4,10 @@
         "title": "Erro",
         "description": "Algo deu errado. Por favor, tente novamente mais tarde.",
         "go_to_home": "Ir para a página inicial"
+    },
+    "loading_screen": {
+        "aria_label": "Tela de feedback de loading",
+        "title": "Carregando...",
+        "description": "Por favor, aguarde enquanto processamos suas informações."
     }
 }

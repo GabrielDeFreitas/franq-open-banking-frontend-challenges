@@ -4,5 +4,10 @@
         "title": "Error",
         "description": "Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
         "go_to_home": "Ir a la página del inicio"
+    },
+    "loading_screen": {
+        "aria_label": "Pantalla de retroalimentación de carga",
+        "title": "Cargando...",
+        "description": "Por favor, espere mientras procesamos su información."
     }
 }

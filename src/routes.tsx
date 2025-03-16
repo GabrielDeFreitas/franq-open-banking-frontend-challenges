@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import { RoutesUrls } from './utils/enums/routes-url'
 import HomeGeneric from './pages/home-generic'
 import { ErrorGenericController } from './pages/error-generic'
+import { LoadingScreenController } from './pages/loading-screen'
 
 export default function RouterProvider() {
   const routes = [
@@ -12,6 +13,10 @@ export default function RouterProvider() {
     {
       path: '*',
       element: <ErrorGenericController />
+    },
+    {
+      path: RoutesUrls.LOADING_SCREEN,
+      element: <LoadingScreenController />
     }
   ]
 
