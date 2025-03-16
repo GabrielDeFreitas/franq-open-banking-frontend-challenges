@@ -1,0 +1,8 @@
+{
+    "error_generic": {
+        "aria_label": "Error feedback screen",
+        "title": "Error",
+        "description": "Something went wrong. Please try again later.",
+        "go_to_home": "Go to the home page"
+    }
+}

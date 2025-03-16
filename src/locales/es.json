@@ -1,0 +1,8 @@
+{
+    "error_generic": {
+        "aria_label": "Pantalla de retroalimentación de error",
+        "title": "Error",
+        "description": "Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
+        "go_to_home": "Ir a la página del inicio"
+    }
+}

@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client'
 import RouterProvider from './routes'
 import './index.css'
 import { getMovistarSkin, ThemeContextProvider } from '@telefonica/mistica'
+import './i18n'
 
 const theme = {
   skin: getMovistarSkin(),
