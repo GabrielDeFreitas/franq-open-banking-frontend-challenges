@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { RoutesUrls } from './utils/enums/routes-url'
 import HomeGeneric from './pages/home-generic'
-import ErrorGeneric from './pages/error-generic'
+import { ErrorGenericController } from './pages/error-generic'
 
 export default function RouterProvider() {
   const routes = [
@@ -11,7 +11,7 @@ export default function RouterProvider() {
     },
     {
       path: '*',
-      element: <ErrorGeneric />
+      element: <ErrorGenericController />
     }
   ]
 
