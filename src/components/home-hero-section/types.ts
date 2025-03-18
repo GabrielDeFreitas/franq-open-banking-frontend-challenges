@@ -1,4 +1,4 @@
-import { ComponentProps, ReactNode } from 'react'
+import { ComponentProps, ElementType, ReactNode } from 'react'
 import { RoutesUrls } from '../../utils/enums/routes-url'
 
 export interface HomeHeroSectionHeaderProps {
@@ -19,4 +19,6 @@ export type RoutesUrlKeys = (typeof RoutesUrls)[keyof typeof RoutesUrls]
 export interface HomeHeroSectionButtonProps extends ComponentProps<'button'> {
   url: RoutesUrlKeys
   label: string
+  className?: string
+  icon?: ElementType
 }
