@@ -18,8 +18,9 @@ export interface AuthCardFooterProps extends ComponentProps<'button'> {
 }
 
 export interface AuthCardLabelProps extends ComponentProps<'label'> {
-  label: string
+  text: string
   children: ReactNode
+  htmlFor?: string
 }
 
 export interface AuthCardBreadcrumbProps {
