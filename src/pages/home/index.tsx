@@ -1,7 +1,7 @@
 import { HeroSection } from '../../components/home-hero-section'
 import { RoutesUrls } from '../../utils/enums/routes-url'
 
-export default function HomeGeneric() {
+export default function Home() {
   return (
     <HeroSection.Root>
       <HeroSection.ButtonWrapper>

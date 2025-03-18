@@ -1,22 +1,22 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { RoutesUrls } from './utils/enums/routes-url'
-import HomeGeneric from './pages/home'
-import { LoginController } from './pages/login'
-import { RegisterController } from './pages/register'
+import Home from './pages/home'
+import Login from './pages/login'
+import Register from './pages/register'
 
 export default function RouterProvider() {
   const routes = [
     {
       path: RoutesUrls.BASE_URL,
-      element: <HomeGeneric />
+      element: <Home />
     },
     {
       path: RoutesUrls.LOGIN,
-      element: <LoginController />
+      element: <Login />
     },
     {
       path: RoutesUrls.REGISTER,
-      element: <RegisterController />
+      element: <Register />
     }
   ]
 
