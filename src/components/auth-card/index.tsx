@@ -1,3 +1,4 @@
+import AuthCardBreadcrumb from './auth-card.breadcrumb'
 import { AuthCardContent } from './auth-card.content'
 import { AuthCardFooter } from './auth-card.footer'
 import { AuthCardHeader } from './auth-card.header'
@@ -11,5 +12,6 @@ export const Auth = {
   Header: AuthCardHeader,
   Footer: AuthCardFooter,
   Content: AuthCardContent,
-  Input: AuthCardInput
+  Input: AuthCardInput,
+  Breadcrumb: AuthCardBreadcrumb
 }

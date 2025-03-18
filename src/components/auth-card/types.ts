@@ -22,4 +22,8 @@ export interface AuthCardLabelProps extends ComponentProps<'label'> {
   children: ReactNode
 }
 
+export interface AuthCardBreadcrumbProps {
+  localPath: string
+}
+
 export type AuthCardInputProps = ComponentProps<'input'>

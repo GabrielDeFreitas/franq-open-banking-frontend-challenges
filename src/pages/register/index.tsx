@@ -6,6 +6,7 @@ import { RoutesUrls } from '../../utils/enums/routes-url'
 export default function Register() {
   return (
     <AuthWrapper>
+      <Auth.Breadcrumb localPath="Register" />
       <Auth.Root>
         <Auth.Header title="Register" description="Create an account by filling in the information below." />
         <Auth.Content>

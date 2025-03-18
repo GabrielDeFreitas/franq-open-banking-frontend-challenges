@@ -6,6 +6,7 @@ import { RoutesUrls } from '../../utils/enums/routes-url'
 export default function Login() {
   return (
     <AuthWrapper>
+      <Auth.Breadcrumb localPath="Login" />
       <Auth.Root>
         <Auth.Header title="Login" description="Enter your email and password to access your account.   " />
         <Auth.Content>
