@@ -1,5 +1,7 @@
 import { Auth } from '../../../components/auth-card'
+import AuthRedirectLink from '../../../components/auth-redirect-link'
 import AuthWrapper from '../../../components/auth-wrapper'
+import { RoutesUrls } from '../../../utils/enums/routes-url'
 
 export default function RegisterView() {
   return (
@@ -26,6 +28,7 @@ export default function RegisterView() {
           </Auth.Label>
         </Auth.Content>
         <Auth.Footer type="submit" label="Register" />
+        <AuthRedirectLink text="Already have an account?" label="Log in" url={RoutesUrls.LOGIN} />
       </Auth.Root>
     </AuthWrapper>
   )
