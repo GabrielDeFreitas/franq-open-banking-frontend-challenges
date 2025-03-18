@@ -3,6 +3,7 @@ import { RoutesUrls } from './utils/enums/routes-url'
 import Home from './pages/home'
 import Login from './pages/login'
 import Register from './pages/register'
+import Finance from './pages/finance'
 
 export default function RouterProvider() {
   const routes = [
@@ -17,6 +18,10 @@ export default function RouterProvider() {
     {
       path: RoutesUrls.REGISTER,
       element: <Register />
+    },
+    {
+      path: RoutesUrls.FINANCE,
+      element: <Finance />
     }
   ]
 
