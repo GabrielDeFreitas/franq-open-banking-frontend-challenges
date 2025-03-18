@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { RoutesUrls } from './utils/enums/routes-url'
-import HomeGeneric from './pages/home-generic'
-import ErrorGeneric from './pages/error-generic'
+import HomeGeneric from './pages/home'
 import { LoginController } from './pages/login'
 import { RegisterController } from './pages/register'
 
@@ -10,10 +9,6 @@ export default function RouterProvider() {
     {
       path: RoutesUrls.BASE_URL,
       element: <HomeGeneric />
-    },
-    {
-      path: '*',
-      element: <ErrorGeneric />
     },
     {
       path: RoutesUrls.LOGIN,
