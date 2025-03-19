@@ -4,6 +4,7 @@ import Home from './pages/home'
 import Login from './pages/login'
 import Register from './pages/register'
 import Finance from './pages/finance'
+import { ProtectedRoute } from './utils/protected-route'
 
 export default function RouterProvider() {
   const routes = [
@@ -21,7 +22,11 @@ export default function RouterProvider() {
     },
     {
       path: RoutesUrls.FINANCE,
-      element: <Finance />
+      element: (
+        <ProtectedRoute>
+          <Finance />
+        </ProtectedRoute>
+      )
     }
   ]
 

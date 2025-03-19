@@ -14,7 +14,8 @@ export interface AuthCardContentProps extends ComponentProps<'form'> {
 }
 
 export interface AuthCardFooterProps extends ComponentProps<'button'> {
-  label: string
+  label?: string
+  children?: ReactNode
 }
 
 export interface AuthCardLabelProps extends ComponentProps<'label'> {
