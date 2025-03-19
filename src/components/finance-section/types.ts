@@ -5,7 +5,7 @@ export interface FinanceRootProps {
 }
 
 export interface FinanceCardProps {
-  title: string
+  title?: string
   description?: string | ReactNode
   children: ReactNode
 }
