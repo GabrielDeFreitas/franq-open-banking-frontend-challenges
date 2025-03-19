@@ -60,7 +60,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [auth.isAuthenticated])
 
-  const login = (user: User) => {
+  const login = (user: Omit<User, 'password'>) => {
     localStorage.setItem('user', JSON.stringify(user))
     localStorage.setItem('lastActivity', Date.now().toString())
     setAuth({ user, isAuthenticated: true })
