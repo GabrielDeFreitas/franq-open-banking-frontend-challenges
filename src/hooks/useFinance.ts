@@ -1,11 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
-import mockFinance from '../utils/mock/finance.json'
 import { createQueryOptions } from '../utils/react-query'
-import { Finance } from '../pages/finance/types'
+import { financeMock } from '../mock/mock'
+import { FinancialData } from '../pages/finance/types'
 
-async function fetchFinance(): Promise<Finance> {
+async function fetchFinance(): Promise<FinancialData> {
   try {
-    const response = mockFinance
+    const response = financeMock
     return response
   } catch {
     throw new Error('Failed to fetch finance data')
