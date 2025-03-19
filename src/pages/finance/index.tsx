@@ -1,25 +1,25 @@
 import { useState, useEffect } from 'react'
-import { AssetData, HistoricalAssetData, Bitcoin, Currency, Stock } from './types'
+import { AssetData, HistoricalAssetData } from './types'
 import { FinanceSection } from '../../components/finance-section'
 import PriceChart from '../../components/price-chart'
 import AssetTable from '../../components/asset-table'
-import { financeMock } from '../../mock/mock'
 import { generateHistoricalData } from '../../utils/historical-data'
 import { transformBitcoin, transformCurrencies, transformStocks } from '../../utils/trans-form'
+import { useFinance } from '../../hooks/useFinance'
 
 export default function Finance() {
+  const { data, isLoading, error } = useFinance()
   const [selectedAsset, setSelectedAsset] = useState<AssetData | null>(null)
   const [historicalData, setHistoricalData] = useState<HistoricalAssetData | null>(null)
-  const [assets, setAssets] = useState<AssetData[]>([])
   const [activeTab, setActiveTab] = useState<'currencies' | 'stocks' | 'bitcoin'>('currencies')
 
-  useEffect(() => {
-    const currencies = transformCurrencies(Object.entries(financeMock.results.currencies) as [string, Currency][])
-    const stocks = transformStocks(Object.entries(financeMock.results.stocks) as [string, Stock][])
-    const bitcoin = transformBitcoin(Object.entries(financeMock.results.bitcoin) as [string, Bitcoin][])
-
-    setAssets([...currencies, ...stocks, ...bitcoin])
-  }, [])
+  const assets = data
+    ? [
+        ...transformCurrencies(Object.entries(data.currencies)),
+        ...transformStocks(Object.entries(data.stocks)),
+        ...transformBitcoin(Object.entries(data.bitcoin))
+      ]
+    : []
 
   useEffect(() => {
     if (selectedAsset) {
@@ -40,6 +40,14 @@ export default function Finance() {
         return false
     }
   })
+
+  if (isLoading) {
+    return <p>Loading...</p>
+  }
+
+  if (error) {
+    return <p>Error: {error.message}</p>
+  }
 
   return (
     <FinanceSection.Root>

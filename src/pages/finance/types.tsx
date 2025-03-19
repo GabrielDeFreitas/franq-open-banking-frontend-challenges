@@ -52,7 +52,7 @@ export interface Tax {
 }
 
 export interface FinancialResults {
-  currencies: Record<string, Currency | string>
+  currencies: Record<string, Currency>
   stocks: Record<string, Stock>
   bitcoin: Record<string, Bitcoin>
   available_sources: string[]
