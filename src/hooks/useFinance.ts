@@ -4,9 +4,7 @@ import { FinancialResults } from '../pages/finance/types'
 
 async function fetchFinance(): Promise<FinancialResults> {
   try {
-    const apiKey = import.meta.env.VITE_HGBRASIL_API_KEY
-    const response = await fetch(`/api/finance/quotations?key=${apiKey}`)
-
+    const response = await fetch('/api/finance')
     if (!response.ok) {
       throw new Error('Failed to fetch finance data')
     }

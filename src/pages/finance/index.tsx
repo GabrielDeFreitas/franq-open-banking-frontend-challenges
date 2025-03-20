@@ -17,9 +17,9 @@ export default function Finance() {
 
   const assets = data
     ? [
-        ...transformCurrencies(Object.entries(data.currencies)),
-        ...transformStocks(Object.entries(data.stocks)),
-        ...transformBitcoin(Object.entries(data.bitcoin))
+        ...transformCurrencies(Object.entries(data.currencies || {})),
+        ...transformStocks(Object.entries(data.stocks || {})),
+        ...transformBitcoin(Object.entries(data.bitcoin || {}))
       ]
     : []
 
