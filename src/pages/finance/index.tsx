@@ -6,6 +6,8 @@ import AssetTable from '../../components/asset-table'
 import { generateHistoricalData } from '../../utils/historical-data'
 import { transformBitcoin, transformCurrencies, transformStocks } from '../../utils/trans-form'
 import { useFinance } from '../../hooks/useFinance'
+import Skeleton from '../skeleton'
+import ErrorPage from '../error'
 
 export default function Finance() {
   const { data, isLoading, error } = useFinance()
@@ -42,11 +44,11 @@ export default function Finance() {
   })
 
   if (isLoading) {
-    return <p>Loading...</p>
+    return <Skeleton />
   }
 
   if (error) {
-    return <p>Error: {error.message}</p>
+    return <ErrorPage message={error.message || 'An unexpected error occurred.'} />
   }
 
   return (
