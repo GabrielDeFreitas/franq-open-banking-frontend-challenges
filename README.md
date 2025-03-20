@@ -1,5 +1,7 @@
 ## 🚀 Franq Open Banking Frontend Challenges
 
+![Landing page](.github/pictures/home.PNG)
+
 Este projeto foi desenvolvido como parte de um desafio de frontend, utilizando tecnologias modernas para criar uma aplicação responsiva e eficiente:
 
 - **Vite**: Ferramenta de build rápida e moderna.
@@ -45,3 +47,5 @@ Substitua SUA_CHAVE_DE_API pela chave gerada no console do HG Brasil.
 Você pode visualizar o projeto em produção no seguinte link:
 
 [Visualizar Projeto](https://franq-open-banking-frontend-challenges.vercel.app/)
+
+![Landing page](.github/pictures/finance.png)
