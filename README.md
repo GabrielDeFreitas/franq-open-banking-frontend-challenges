@@ -16,11 +16,20 @@ Este projeto foi desenvolvido como parte de um desafio de frontend, utilizando t
 
 ## Como Executar o Projeto
 
-Configure as variáveis de ambiente
+### Configure as Variáveis de Ambiente
+Para consumir a API de dados financeiros, você precisará de uma chave de acesso fornecida pelo HG Brasil.
+
+Siga os passos abaixo:
+
+Acesse a [documentação oficial do HG Brasil ](https://console.hgbrasil.com/documentation/finance#obter-todos-os-dados) para entender como obter uma chave de API.
+
+Crie uma conta no HG Brasil Console e gere sua chave de API.
 
 Crie um arquivo .env na raiz do projeto e adicione a seguinte variável:
 
-`VITE_HGBRASIL_API_KEY=SUA_CHAVE`
+`VITE_HGBRASIL_API_KEY=SUA_CHAVE_DE_API`
+
+Substitua SUA_CHAVE_DE_API pela chave gerada no console do HG Brasil.
 
 | Comando          | Ação                                                         |
 | :--------------- | :------------------------------------------------------------- |
