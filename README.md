@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+## 🚀 Franq Open Banking Frontend Challenges
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte de um desafio de frontend, utilizando tecnologias modernas para criar uma aplicação responsiva e eficiente:
 
-Currently, two official plugins are available:
+- **Vite**: Ferramenta de build rápida e moderna.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
+- **Tailwind CSS**: Framework de CSS utilitário para criação de layouts responsivos.
+- **Tailwind Merge**: Utilitário para mesclar classes do Tailwind CSS.
+- **React Query**: Gerenciamento de estado assíncrono e cache de dados.
+- **Storybook**: Ferramenta para desenvolvimento de componentes isolados.
+- **Storybook**: Ferramenta para desenvolvimento de componentes isolados.
+- **React Hook Form**: Biblioteca para gerenciamento de formulários.
+- **Zod**: Biblioteca para validação e tipagem de dados.
+- **Lucide React**: Ícones modernos e personalizáveis para React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como Executar o Projeto
 
-## Expanding the ESLint configuration
+Configure as variáveis de ambiente
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Crie um arquivo .env na raiz do projeto e adicione a seguinte variável:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+`VITE_HGBRASIL_API_KEY=SUA_CHAVE`
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Comando          | Ação                                                         |
+| :--------------- | :------------------------------------------------------------- |
+| `pnpm install`   | Instala as dependências                                         |
+| `pnpm run dev`       | Inicia o servidor de desenvolvimento local|
+| `pnpm run build`       | Gera a build de produção do projeto.|
+| `pnpm run test`       | Executa os testes do projeto.|
+| `pnpm run storybook`       | Inicia o Storybook para desenvolvimento de componentes isolados.|
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Visualizar o Projeto
+
+Você pode visualizar o projeto em produção no seguinte link:
+
+[Visualizar Projeto](https://franq-open-banking-frontend-challenges.vercel.app/)
